@@ -20,8 +20,7 @@ for i in range(1, 365):
                 file.write(d)
         os.system('git add .')
         
-        cmd = 'GIT_AUTHOR_DATE='+formated+' GIT_COMMITTER_DATE='+formated+' git commit -m "'+formated+'"'
+        cmd = 'GIT_AUTHOR_DATE='+formated+' GIT_COMMITTER_DATE='+formated+' git commit --author="Peter Korczak <pkorczak@gmail.com>" -m "'+formated+'"'
         os.system(cmd)        
 
-
-# GIT_AUTHOR_DATE=2022-08-22T12:00:00 GIT_COMMITTER_DATE=2022-08-22T12:00:00
+os.system('git push -u origin main')
