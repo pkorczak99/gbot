@@ -19,7 +19,9 @@ for i in range(1, 365):
         with open('file.txt', 'a') as file:
                 file.write(d)
         os.system('git add .')
-        os.system('git add .')        
+        
+        cmd = 'GIT_AUTHOR_DATE='+formated+' GIT_COMMITTER_DATE='+formated+' git commit -m "'+formated+'"'
+        os.system(cmd)        
 
 
 # GIT_AUTHOR_DATE=2022-08-22T12:00:00 GIT_COMMITTER_DATE=2022-08-22T12:00:00
