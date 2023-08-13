@@ -6,6 +6,9 @@ from datetime import datetime, timedelta
 # Get today's date
 today = datetime.now()
 
+os.system('git config user.name "pkorczak99"')
+os.system('git config user.email pkorczak99@gmail.com')
+
 for i in range(1, 365):
     mydate = today - timedelta(days=i)
     # formated = mydate.isoformat()
